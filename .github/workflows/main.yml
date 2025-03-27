@@ -22,4 +22,4 @@ jobs:
           context: .
           file: ./dockerfile.webserver
           push: true
-          tags: ghcr.io/${{ github.repository }}:latest
+          tags: ghcr.io/html-openshit-app:latest
