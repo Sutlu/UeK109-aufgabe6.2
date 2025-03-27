@@ -1,6 +1,6 @@
 FROM nginxinc/nginx-unprivileged
 
-COPY ./app /usr/share/nginx/html/
+COPY ./00_app /usr/share/nginx/html/
 
 EXPOSE 8080
 

@@ -1,0 +1,25 @@
+kind: BuildConfig
+apiVersion: build.openshift.io/v1
+metadata:
+  name: html-openshift-app
+  labels:
+    app: html-openshift-app
+    app.kubernetes.io/part-of: html-openshift-app
+spec:
+  source:
+    type: Git
+    git:
+      uri: https://github.com/Sutlu/UeK109-aufgabe6.2.git
+  strategy:
+    type: Docker
+    dockerStrategy:
+      dockerfilePath: dockerfile.webserver
+  output:
+    to:
+      kind: ImageStreamTag
+      name: html-openshift-app:latest
+  triggers:
+    - type: GitHub
+      github:
+        secret: mysecret  # Replace with your webhook secret
+    - type: ConfigChange
