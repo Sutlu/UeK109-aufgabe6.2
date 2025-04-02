@@ -20,6 +20,6 @@ spec:
         image: image-registry.openshift-image-registry.svc:5000/254195-lucsut/html-openshift-app:latest
         imagePullPolicy: Always
         ports:
-        - containerPort: 80
+        - containerPort: 8080
           protocol: TCP
         resources: {}
