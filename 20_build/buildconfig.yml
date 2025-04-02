@@ -26,7 +26,7 @@ spec:
     type: Git
     git:
       uri: 'https://github.com/Sutlu/UeK109-aufgabe6.2.git'
-      contextDir: /00_app
+      contextDir: 00_app
       sourceSecret:
         name: html-openshift-app-github
   triggers:
