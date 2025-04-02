@@ -3,9 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Web Server</title>
+    <title>OpenShift Web App</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Hello, World! This is my custom web server.</h1>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="openshift-logo.svg" alt="OpenShift Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero">
+                <h1>Welcome to My OpenShift Web Application</h1>
+                <p>Successfully deployed on OpenShift using Source-to-Image (S2I) build strategy</p>
+                <a href="#learn-more" class="btn">Learn More</a>
+            </section>
+
+            <section id="features" class="features">
+                <div class="feature-card">
+                    <div class="icon">🚀</div>
+                    <h2>Fast Deployment</h2>
+                    <p>Deploy your applications quickly and efficiently with OpenShift's container platform.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">🔄</div>
+                    <h2>CI/CD Integration</h2>
+                    <p>Seamless integration with continuous integration and deployment workflows.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">🛡️</div>
+                    <h2>Enterprise Security</h2>
+                    <p>Built-in security features to keep your applications safe and compliant.</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 OpenShift Web App | Created for ÜK109 Assignment 6.2</p>
+        </footer>
+    </div>
 </body>
 </html>
